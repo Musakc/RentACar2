@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entities.Abstract
 {
-    public interface IEntity
+    public interface IEntity 
     {
-         int Id { get; set; }
-         string Marka { get; set; }
-         string Model { get; set; }
-         decimal Fiyat { get; set; }
-    }
+        int Id { get; set; }
+        string Marka { get; set; }
+        string Model { get; set; }
+        decimal Fiyat { get; set; }
+    }   
 }

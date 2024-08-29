@@ -76,11 +76,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordingScreen.Designer.cs">
+      <DependentUpon>RecordingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="RentalScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RentalScreen.Designer.cs">
       <DependentUpon>RentalScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceForm.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FavoritesScreen.resx">
       <DependentUpon>FavoritesScreen.cs</DependentUpon>
@@ -100,8 +113,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RecordingScreen.resx">
+      <DependentUpon>RecordingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RentalScreen.resx">
       <DependentUpon>RentalScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -118,6 +137,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{5DC25C7B-5937-4E2B-98AC-C59F3BC22F24}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{7fc683e7-6748-458b-8c88-812f6b03ab64}</Project>
       <Name>DataAccess</Name>

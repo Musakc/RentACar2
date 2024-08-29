@@ -56,6 +56,10 @@
             this.lblCarIdSales = new System.Windows.Forms.Label();
             this.gbxCustomerInfo = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.lblModelDataSales = new System.Windows.Forms.Label();
+            this.lblBrandDataSales = new System.Windows.Forms.Label();
+            this.tbxModelSales = new System.Windows.Forms.TextBox();
+            this.tbxBrandSales = new System.Windows.Forms.TextBox();
             this.gbxCardInfo.SuspendLayout();
             this.gbxCustomerInfo.SuspendLayout();
             this.SuspendLayout();
@@ -72,11 +76,11 @@
             // 
             // tbxAddressSales
             // 
-            this.tbxAddressSales.Location = new System.Drawing.Point(40, 316);
+            this.tbxAddressSales.Location = new System.Drawing.Point(40, 350);
             this.tbxAddressSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxAddressSales.Multiline = true;
             this.tbxAddressSales.Name = "tbxAddressSales";
-            this.tbxAddressSales.Size = new System.Drawing.Size(319, 96);
+            this.tbxAddressSales.Size = new System.Drawing.Size(281, 55);
             this.tbxAddressSales.TabIndex = 13;
             // 
             // tbxCardNumber
@@ -101,44 +105,44 @@
             // 
             // tbxTCSales
             // 
-            this.tbxTCSales.Location = new System.Drawing.Point(103, 249);
+            this.tbxTCSales.Location = new System.Drawing.Point(103, 283);
             this.tbxTCSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxTCSales.Name = "tbxTCSales";
-            this.tbxTCSales.Size = new System.Drawing.Size(256, 20);
+            this.tbxTCSales.Size = new System.Drawing.Size(218, 20);
             this.tbxTCSales.TabIndex = 12;
             this.tbxTCSales.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxTCSales_KeyPress);
             // 
             // tbxGSMSales
             // 
-            this.tbxGSMSales.Location = new System.Drawing.Point(93, 208);
+            this.tbxGSMSales.Location = new System.Drawing.Point(93, 242);
             this.tbxGSMSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxGSMSales.Name = "tbxGSMSales";
-            this.tbxGSMSales.Size = new System.Drawing.Size(265, 20);
+            this.tbxGSMSales.Size = new System.Drawing.Size(228, 20);
             this.tbxGSMSales.TabIndex = 11;
             this.tbxGSMSales.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxGSMSales_KeyPress);
             // 
             // tbxMailSales
             // 
-            this.tbxMailSales.Location = new System.Drawing.Point(129, 159);
+            this.tbxMailSales.Location = new System.Drawing.Point(129, 208);
             this.tbxMailSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxMailSales.Name = "tbxMailSales";
-            this.tbxMailSales.Size = new System.Drawing.Size(229, 20);
+            this.tbxMailSales.Size = new System.Drawing.Size(192, 20);
             this.tbxMailSales.TabIndex = 10;
             // 
             // tbxSurnameSales
             // 
-            this.tbxSurnameSales.Location = new System.Drawing.Point(108, 123);
+            this.tbxSurnameSales.Location = new System.Drawing.Point(108, 174);
             this.tbxSurnameSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxSurnameSales.Name = "tbxSurnameSales";
-            this.tbxSurnameSales.Size = new System.Drawing.Size(251, 20);
+            this.tbxSurnameSales.Size = new System.Drawing.Size(213, 20);
             this.tbxSurnameSales.TabIndex = 9;
             // 
             // tbxNameSales
             // 
-            this.tbxNameSales.Location = new System.Drawing.Point(85, 82);
+            this.tbxNameSales.Location = new System.Drawing.Point(85, 139);
             this.tbxNameSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxNameSales.Name = "tbxNameSales";
-            this.tbxNameSales.Size = new System.Drawing.Size(273, 20);
+            this.tbxNameSales.Size = new System.Drawing.Size(236, 20);
             this.tbxNameSales.TabIndex = 8;
             // 
             // btnConfirm
@@ -261,16 +265,16 @@
             // 
             // tbxCarIdSales
             // 
-            this.tbxCarIdSales.Location = new System.Drawing.Point(200, 41);
+            this.tbxCarIdSales.Location = new System.Drawing.Point(153, 41);
             this.tbxCarIdSales.Margin = new System.Windows.Forms.Padding(4);
             this.tbxCarIdSales.Name = "tbxCarIdSales";
-            this.tbxCarIdSales.Size = new System.Drawing.Size(159, 20);
+            this.tbxCarIdSales.Size = new System.Drawing.Size(168, 20);
             this.tbxCarIdSales.TabIndex = 7;
             // 
             // lblAddressSales
             // 
             this.lblAddressSales.AutoSize = true;
-            this.lblAddressSales.Location = new System.Drawing.Point(36, 297);
+            this.lblAddressSales.Location = new System.Drawing.Point(36, 331);
             this.lblAddressSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddressSales.Name = "lblAddressSales";
             this.lblAddressSales.Size = new System.Drawing.Size(84, 13);
@@ -280,7 +284,7 @@
             // lblTCSales
             // 
             this.lblTCSales.AutoSize = true;
-            this.lblTCSales.Location = new System.Drawing.Point(36, 252);
+            this.lblTCSales.Location = new System.Drawing.Point(36, 286);
             this.lblTCSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTCSales.Name = "lblTCSales";
             this.lblTCSales.Size = new System.Drawing.Size(44, 13);
@@ -303,7 +307,7 @@
             // lblGSMSales
             // 
             this.lblGSMSales.AutoSize = true;
-            this.lblGSMSales.Location = new System.Drawing.Point(36, 212);
+            this.lblGSMSales.Location = new System.Drawing.Point(36, 246);
             this.lblGSMSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGSMSales.Name = "lblGSMSales";
             this.lblGSMSales.Size = new System.Drawing.Size(37, 13);
@@ -323,7 +327,7 @@
             // lblMailSales
             // 
             this.lblMailSales.AutoSize = true;
-            this.lblMailSales.Location = new System.Drawing.Point(36, 167);
+            this.lblMailSales.Location = new System.Drawing.Point(36, 216);
             this.lblMailSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMailSales.Name = "lblMailSales";
             this.lblMailSales.Size = new System.Drawing.Size(64, 13);
@@ -333,7 +337,7 @@
             // lblSurnameSales
             // 
             this.lblSurnameSales.AutoSize = true;
-            this.lblSurnameSales.Location = new System.Drawing.Point(36, 127);
+            this.lblSurnameSales.Location = new System.Drawing.Point(36, 178);
             this.lblSurnameSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSurnameSales.Name = "lblSurnameSales";
             this.lblSurnameSales.Size = new System.Drawing.Size(48, 13);
@@ -343,7 +347,7 @@
             // lblNameSales
             // 
             this.lblNameSales.AutoSize = true;
-            this.lblNameSales.Location = new System.Drawing.Point(36, 86);
+            this.lblNameSales.Location = new System.Drawing.Point(36, 143);
             this.lblNameSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNameSales.Name = "lblNameSales";
             this.lblNameSales.Size = new System.Drawing.Size(31, 13);
@@ -356,13 +360,17 @@
             this.lblCarIdSales.Location = new System.Drawing.Point(36, 44);
             this.lblCarIdSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCarIdSales.Name = "lblCarIdSales";
-            this.lblCarIdSales.Size = new System.Drawing.Size(117, 13);
+            this.lblCarIdSales.Size = new System.Drawing.Size(109, 13);
             this.lblCarIdSales.TabIndex = 0;
-            this.lblCarIdSales.Text = "Kiralanacak Araba No :";
+            this.lblCarIdSales.Text = "Kiralanacak Araba Id:";
             // 
             // gbxCustomerInfo
             // 
+            this.gbxCustomerInfo.Controls.Add(this.tbxModelSales);
+            this.gbxCustomerInfo.Controls.Add(this.tbxBrandSales);
+            this.gbxCustomerInfo.Controls.Add(this.lblModelDataSales);
             this.gbxCustomerInfo.Controls.Add(this.btnSave);
+            this.gbxCustomerInfo.Controls.Add(this.lblBrandDataSales);
             this.gbxCustomerInfo.Controls.Add(this.tbxAddressSales);
             this.gbxCustomerInfo.Controls.Add(this.tbxTCSales);
             this.gbxCustomerInfo.Controls.Add(this.tbxGSMSales);
@@ -398,6 +406,43 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // lblModelDataSales
+            // 
+            this.lblModelDataSales.AutoSize = true;
+            this.lblModelDataSales.Location = new System.Drawing.Point(36, 108);
+            this.lblModelDataSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblModelDataSales.Name = "lblModelDataSales";
+            this.lblModelDataSales.Size = new System.Drawing.Size(42, 13);
+            this.lblModelDataSales.TabIndex = 27;
+            this.lblModelDataSales.Text = "Model :";
+            // 
+            // lblBrandDataSales
+            // 
+            this.lblBrandDataSales.AutoSize = true;
+            this.lblBrandDataSales.Location = new System.Drawing.Point(37, 73);
+            this.lblBrandDataSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBrandDataSales.Name = "lblBrandDataSales";
+            this.lblBrandDataSales.Size = new System.Drawing.Size(43, 13);
+            this.lblBrandDataSales.TabIndex = 26;
+            this.lblBrandDataSales.Text = "Marka :";
+            this.lblBrandDataSales.Click += new System.EventHandler(this.lblBrandData_Click);
+            // 
+            // tbxModelSales
+            // 
+            this.tbxModelSales.Location = new System.Drawing.Point(93, 105);
+            this.tbxModelSales.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxModelSales.Name = "tbxModelSales";
+            this.tbxModelSales.Size = new System.Drawing.Size(228, 20);
+            this.tbxModelSales.TabIndex = 26;
+            // 
+            // tbxBrandSales
+            // 
+            this.tbxBrandSales.Location = new System.Drawing.Point(88, 73);
+            this.tbxBrandSales.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxBrandSales.Name = "tbxBrandSales";
+            this.tbxBrandSales.Size = new System.Drawing.Size(233, 20);
+            this.tbxBrandSales.TabIndex = 27;
+            // 
             // RentalScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,6 +456,7 @@
             this.Controls.Add(this.btnEdit);
             this.Name = "RentalScreen";
             this.Text = "RentalScreen";
+            this.Load += new System.EventHandler(this.RentalScreen_Load);
             this.gbxCardInfo.ResumeLayout(false);
             this.gbxCardInfo.PerformLayout();
             this.gbxCustomerInfo.ResumeLayout(false);
@@ -450,5 +496,9 @@
         private System.Windows.Forms.Label lblCarIdSales;
         private System.Windows.Forms.GroupBox gbxCustomerInfo;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label lblModelDataSales;
+        private System.Windows.Forms.Label lblBrandDataSales;
+        private System.Windows.Forms.TextBox tbxModelSales;
+        private System.Windows.Forms.TextBox tbxBrandSales;
     }
 }

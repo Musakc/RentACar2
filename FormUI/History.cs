@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Concrete.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,17 @@ namespace FormUI
 
         private void History_Load(object sender, EventArgs e)
         {
-
+            ListFavorites();
         }
+
+        private void ListFavorites()
+        {
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                var list = context.Histories.ToList();
+                dgwProductHistory.DataSource = list;
+            }
+        }
+
     }
 }

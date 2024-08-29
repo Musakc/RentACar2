@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgwProduct = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
+            this.dgwProductHistory = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwProductHistory)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgwProduct
+            // dgwProductHistory
             // 
-            this.dgwProduct.AllowUserToAddRows = false;
-            this.dgwProduct.AllowUserToDeleteRows = false;
-            this.dgwProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwProduct.Location = new System.Drawing.Point(51, 50);
-            this.dgwProduct.Margin = new System.Windows.Forms.Padding(4);
-            this.dgwProduct.MultiSelect = false;
-            this.dgwProduct.Name = "dgwProduct";
-            this.dgwProduct.ReadOnly = true;
-            this.dgwProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgwProduct.Size = new System.Drawing.Size(747, 286);
-            this.dgwProduct.TabIndex = 14;
+            this.dgwProductHistory.AllowUserToAddRows = false;
+            this.dgwProductHistory.AllowUserToDeleteRows = false;
+            this.dgwProductHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgwProductHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwProductHistory.Location = new System.Drawing.Point(91, 28);
+            this.dgwProductHistory.Margin = new System.Windows.Forms.Padding(4);
+            this.dgwProductHistory.MultiSelect = false;
+            this.dgwProductHistory.Name = "dgwProductHistory";
+            this.dgwProductHistory.ReadOnly = true;
+            this.dgwProductHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgwProductHistory.Size = new System.Drawing.Size(747, 286);
+            this.dgwProductHistory.TabIndex = 14;
             // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 450);
-            this.Controls.Add(this.dgwProduct);
+            this.Controls.Add(this.dgwProductHistory);
             this.Name = "History";
             this.Text = "History";
             this.Load += new System.EventHandler(this.History_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwProductHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgwProduct;
+        private System.Windows.Forms.DataGridView dgwProductHistory;
     }
 }
