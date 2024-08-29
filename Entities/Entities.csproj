@@ -43,7 +43,8 @@
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Concrete\Car.cs" />
-    <Compile Include="Concrete\MyFavorite.cs" />
+    <Compile Include="Concrete\Favorite.cs" />
+    <Compile Include="Concrete\Property.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

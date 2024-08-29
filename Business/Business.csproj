@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICarService.cs" />
+    <Compile Include="Abstract\IFavoriteService.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Concrete\CarManager.cs" />
+    <Compile Include="Concrete\FavoriteManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,5 +58,6 @@
       <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

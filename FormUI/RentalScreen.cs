@@ -12,9 +12,33 @@ namespace FormUI
 {
     public partial class RentalScreen : Form
     {
+        public int CarId { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public SourceForm Source {  get; set; }  //hangi form'dan geçiş yaptığımızı belirtmek için
+
         public RentalScreen()
         {
             InitializeComponent();
+        }
+
+        private void RentalScreen_Load(object sender, EventArgs e)
+        {
+            // CarId değerini tbxCarIdSales textbox'ına yazdırın
+            tbxCarIdSales.Text = CarId.ToString();
+            tbxBrandSales.Text = Brand.ToString();
+            tbxModelSales.Text = Model.ToString();
+
+            // Hangi formdan geçiş yapıldığını kontrol ederek özel işlemler yapılabilir
+            switch (Source)
+            {
+                case SourceForm.Form1:
+                    // Form1'den geçiş yapıldıysa özel işlemler
+                    break;
+                case SourceForm.FavoritesScreen:
+                    // FavoritesScreen'den geçiş yapıldıysa özel işlemler
+                    break;
+            }
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -74,6 +98,9 @@ namespace FormUI
         {
             if (gbxCustomerInfo.Enabled == false)
             {
+                tbxCarIdSales.Enabled = false;
+                tbxBrandSales.Enabled = false;
+                tbxModelSales.Enabled = false;
                 gbxCustomerInfo.Enabled = true;
             }
         }
@@ -105,5 +132,12 @@ namespace FormUI
                 e.Handled = true;
             }
         }
+
+        private void lblBrandData_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

@@ -11,6 +11,7 @@ namespace DataAccess.Concrete.EntityFramework
     public class NorthwindContext : DbContext
     {
         public DbSet<Car> Car {  get; set; }
-        public DbSet<MyFavorite> Favorite { get; set; }
+        public DbSet<Property> Property { get; set; }
+        public DbSet<Favorite> Favorite { get; set; }
     }
 }

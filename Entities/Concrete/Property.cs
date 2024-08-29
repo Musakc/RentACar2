@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-    public class MyFavorite : IEntity
+    public class Property : IEntity
     {
         public int Id { get; set; }
         public string Marka { get; set; }
         public string Model { get; set; }
+        public int Yil { get; set; }
         public decimal Fiyat { get; set; }
+        public string Renk { get; set; }
+        public int KM { get; set; }
     }
 }

@@ -82,6 +82,7 @@
     <Compile Include="RentalScreen.Designer.cs">
       <DependentUpon>RentalScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="SourceForm.cs" />
     <EmbeddedResource Include="FavoritesScreen.resx">
       <DependentUpon>FavoritesScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +119,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{5DC25C7B-5937-4E2B-98AC-C59F3BC22F24}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{7fc683e7-6748-458b-8c88-812f6b03ab64}</Project>
       <Name>DataAccess</Name>
