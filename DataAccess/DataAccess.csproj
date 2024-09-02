@@ -53,38 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ICarDal.cs" />
-    <Compile Include="Abstract\IFavoriteDal.cs" />
-    <Compile Include="Abstract\IPersonDal.cs" />
-    <Compile Include="Concrete\EntityFramework\EfCarDal.cs" />
-    <Compile Include="Concrete\EntityFramework\EfFavoriteDal.cs" />
-    <Compile Include="Concrete\EntityFramework\EfPersonDal.cs" />
     <Compile Include="Concrete\EntityFramework\NorthwindContext.cs" />
-    <Compile Include="Concrete\EntityFramework\UserRepository_RecordingScreen.cs" />
-    <Compile Include="Migrations\202408271354209_CreateYilColumnInCarsTable.cs" />
-    <Compile Include="Migrations\202408271354209_CreateYilColumnInCarsTable.designer.cs">
-      <DependentUpon>202408271354209_CreateYilColumnInCarsTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202408280749562_CreateFavoritesTable.cs" />
-    <Compile Include="Migrations\202408280749562_CreateFavoritesTable.designer.cs">
-      <DependentUpon>202408280749562_CreateFavoritesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202408280753050_CreatePropertiesTable.cs" />
-    <Compile Include="Migrations\202408280753050_CreatePropertiesTable.designer.cs">
-      <DependentUpon>202408280753050_CreatePropertiesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202408280812481_CreatePropertyTable.cs" />
-    <Compile Include="Migrations\202408280812481_CreatePropertyTable.designer.cs">
-      <DependentUpon>202408280812481_CreatePropertyTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202408280820423_CreatePropertiesTable1.cs" />
-    <Compile Include="Migrations\202408280820423_CreatePropertiesTable1.designer.cs">
-      <DependentUpon>202408280820423_CreatePropertiesTable1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202408280831459_DeleteYilColumnInCarsTable.cs" />
-    <Compile Include="Migrations\202408280831459_DeleteYilColumnInCarsTable.designer.cs">
-      <DependentUpon>202408280831459_DeleteYilColumnInCarsTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,12 +61,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj">
-      <Project>{5b033abd-26e5-4211-ad9e-af3a8a559cb0}</Project>
-      <Name>Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202408271354209_CreateYilColumnInCarsTable.resx">

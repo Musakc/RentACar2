@@ -27,6 +27,9 @@ namespace DataAccess.Concrete.EntityFramework
                 var deletedEntity = context.Entry(favorite);
                 deletedEntity.State = EntityState.Deleted;
                 context.SaveChanges();
+
+                //context.Favorite.Remove(favorite);
+                //        context.SaveChanges();
             }
         }
 

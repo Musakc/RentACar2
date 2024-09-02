@@ -41,24 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ICarService.cs" />
-    <Compile Include="Abstract\IFavoriteService.cs" />
-    <Compile Include="Abstract\IPersonService.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Concrete\CarManager.cs" />
     <Compile Include="Concrete\FavoriteManager.cs" />
-    <Compile Include="Concrete\PersonManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserService\UserService_RecordingScreen.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{7fc683e7-6748-458b-8c88-812f6b03ab64}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Entities\Entities.csproj">
-      <Project>{5b033abd-26e5-4211-ad9e-af3a8a559cb0}</Project>
-      <Name>Entities</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

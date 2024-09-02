@@ -88,13 +88,6 @@
     <Compile Include="RentalScreen.Designer.cs">
       <DependentUpon>RentalScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="SourceForm.cs" />
-    <Compile Include="UserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserForm.Designer.cs">
-      <DependentUpon>UserForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FavoritesScreen.resx">
       <DependentUpon>FavoritesScreen.cs</DependentUpon>
     </EmbeddedResource>

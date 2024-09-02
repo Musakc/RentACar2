@@ -120,60 +120,7 @@ namespace FormUI
 
         private void btnAddFavorites_Click(object sender, EventArgs e)
         {
-            if (dgwProduct.CurrentRow != null)
-            {
-                // Seçili satırdaki verileri al
-                int propertyId = Convert.ToInt32(dgwProduct.CurrentRow.Cells["Id"].Value.ToString());
-                string marka = dgwProduct.CurrentRow.Cells["Marka"].Value.ToString();
-                string model = dgwProduct.CurrentRow.Cells["Model"].Value.ToString();
-                int yil = Convert.ToInt32(dgwProduct.CurrentRow.Cells["Yil"].Value);
-                decimal fiyat = Convert.ToDecimal(dgwProduct.CurrentRow.Cells["Fiyat"].Value);
-                string renk = dgwProduct.CurrentRow.Cells["Renk"].Value.ToString();
-                int km = Convert.ToInt32(dgwProduct.CurrentRow.Cells["KM"].Value);
-
-                // Yeni Favorite nesnesi oluştur
-                Favorite newFavorite = new Favorite
-                {
-                    PropertyId = propertyId,
-                    Marka = marka,
-                    Model = model,
-                    Yil = yil,
-                    Fiyat = fiyat,
-                    Renk = renk,
-                    KM = km
-                };
-
-                var existingFavorite = _favoriteService.GetAll().FirstOrDefault(f => f.PropertyId == propertyId );
-
-                // Property'deki 'Id' ile Favorite tablosundaki 'PropertyId' aynı ise eklemez
-                if (existingFavorite != null)
-                {
-                    MessageBox.Show("Bu araç zaten favorilerinizde!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
-
-                // Favorite nesnesini veritabanına ekle
-                _favoriteService.Add(newFavorite);
-
-                MessageBox.Show("Araç favorilere eklendi!");
-
-                // Favoriler ekranını güncelle
-                //FavoritesScreen favoritesScreen = new FavoritesScreen();
-                //favoritesScreen.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Lütfen bir araç seçin", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-
-            LoadProducts();
-        }
-
-        private void LoadProducts()
-        {
-            dgwProduct.DataSource = _carService.GetAll();
+            MessageBox.Show("Favorilerime eklendi.");
         }
     }
 }
